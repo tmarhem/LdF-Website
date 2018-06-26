@@ -1,8 +1,6 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<meta charset="utf-8">
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
@@ -11,21 +9,20 @@
   <h1>{{ title }}</h1>
   <nav>
   <ul>
-  	<li>Accueil</li>
-  	<li>Présentation</li>
-  	<li>Activités</li>
-  	<li>Nous rejoindre</li>
-  	<li>Contact</li>
+  	<li><a routerLink="/home" routerLinkActive="active"> Accueil</a></li>
+  	<li><a routerLink="/presentation" routerLinkActive="active"> Présentation</a></li>
+  	<li><a routerLink="/activities" routerLinkActive="active"> Activités</a></li>
+  	<li><a routerLink="/joinUs" routerLinkActive="active"> Nous rejoindre</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active"> Contact</a></li>
+
   </ul>
   </nav>
 </div>
 
-<div id="content-home">
-<app-content-home></app-content-home>
+<div id="content">
+
 </div>
-<div id="content-presentation">
-<app-content-presentation></app-content-presentation>
-</div>
+
 <footer>
 	<div id="socialMedias">
 		<ul>

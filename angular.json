@@ -46,7 +46,7 @@
               "src/assets"
             ],
             "styles": [
-              "../angularLdF/node_modules/bootstrap/dist/css/bootstrap.css",
+              "../../GitKraken Repositories/LdF-Website/node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
             "scripts": []
