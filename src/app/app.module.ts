@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { YoutubePlayerModule } from 'ngx-youtube-player';
 import { AppComponent } from './app.component';
-import { ContentHomeComponent } from './content-home/content-home.component';
-import { ContentPresentationComponent } from './content-presentation/content-presentation.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { JoinUsComponent } from './join-us/join-us.component';
 import { ContactComponent } from './contact/contact.component';
@@ -34,6 +33,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    YoutubePlayerModule,
     //Adding defined routes
     RouterModule.forRoot(
       appRoutes,

@@ -12,4 +12,15 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  player: YT.Player;
+  private id: string = 'vgxSgSR3Mf4';
+
+  savePlayer(player) {
+    this.player = player;
+    console.log('player instance', player);
+  }
+  onStateChange(event) {
+    console.log('player state', event.data);
+  }
+
 }

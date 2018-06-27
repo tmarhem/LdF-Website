@@ -1,3 +1,10 @@
-<p>
-  home works!
-</p>
+<youtube-player
+      [videoId]="id"
+      [height]="500"
+      [width]="1000"
+      (ready)="savePlayer($event)"
+      (change)="onStateChange($event)"
+    ></youtube-player>
+
+    <p>Texte d'accueil</p>
+    <p>Prochain évènement :</p>
