@@ -9,6 +9,16 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PresentationComponent } from './presentation/presentation.component';
 
+//Google Calendar
+import { DxSchedulerModule } from 'devextreme-angular';
+import 'rxjs/Rx';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import DataSource from 'devextreme/data/data_source';
+import CustomStore from 'devextreme/data/custom_store';
+if(!/localhost/.test(document.location.host)) {
+    enableProdMode();
+}
+
 //Defining routes
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -34,6 +44,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     YoutubePlayerModule,
+    DxSchedulerModule,
+    HttpClientModule,
     //Adding defined routes
     RouterModule.forRoot(
       appRoutes,

@@ -22,8 +22,11 @@
     "@angular/router": "^6.0.3",
     "bootstrap": "^3.3.7",
     "core-js": "^2.5.4",
+    "devextreme": "^18.1.4",
+    "devextreme-angular": "^18.1.4",
     "ngx-youtube-player": "^6.0.0",
-    "rxjs": "^6.0.0",
+    "rxjs-compat": "^6.2.1",
+    "stream": "0.0.2",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
