@@ -10,14 +10,20 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PresentationComponent } from './presentation/presentation.component';
 
-//Google Calendar
-import { DxSchedulerModule } from 'devextreme-angular';
-
+//Probably useless
 import 'rxjs/Rx';
-
 import DataSource from 'devextreme/data/data_source';
 import CustomStore from 'devextreme/data/custom_store';
 
+//Facebook
+import { FacebookModule } from 'ng2-facebook-sdk';
+
+
+/**
+INFO Youtube bug probably inherent to the module, http instead of https, can't change it in params
+
+TODO Resolve bug, Facebook plugin disapearing after naviguation
+**/
 
 //Defining routes
 const appRoutes: Routes = [
@@ -45,7 +51,7 @@ const appRoutes: Routes = [
     BrowserModule,
     YoutubePlayerModule,
     HttpClientModule,
-    DxSchedulerModule,
+    FacebookModule.forRoot(),
     //Adding defined routes
     RouterModule.forRoot(
       appRoutes,
