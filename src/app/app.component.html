@@ -19,6 +19,16 @@
   </nav>
 </div>
 
+<dx-scheduler
+    [dataSource]="dataSource"
+    [views]='["agenda"]'
+    currentView="agenda"
+    [currentDate]="currentDate"
+    [startDayHour]="9"
+    [height]="600">
+</dx-scheduler>
+
+
 <div id="content">
 <router-outlet></router-outlet>
 </div>

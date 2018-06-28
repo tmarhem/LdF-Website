@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  //Youtube Player
   player: YT.Player;
   private id: string = 'vgxSgSR3Mf4';
 
@@ -22,5 +23,7 @@ export class HomeComponent implements OnInit {
   onStateChange(event) {
     console.log('player state', event.data);
   }
+
+  //GCalendar
 
 }
