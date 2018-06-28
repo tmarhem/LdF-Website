@@ -9,6 +9,8 @@ import { JoinUsComponent } from './join-us/join-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PresentationComponent } from './presentation/presentation.component';
+import { NavPresentationComponent } from './shared/nav-presentation/nav-presentation.component';
+
 
 //Probably useless
 import 'rxjs/Rx';
@@ -22,7 +24,7 @@ import { FacebookModule } from 'ng2-facebook-sdk';
 /**
 INFO Youtube bug probably inherent to the module, http instead of https, can't change it in params
 
-TODO Resolve bug, Facebook plugin disapearing after naviguation
+TODO Rename and divide presentation module into 3
 **/
 
 //Defining routes
@@ -46,6 +48,7 @@ const appRoutes: Routes = [
     ContactComponent,
     HomeComponent,
     PresentationComponent,
+    NavPresentationComponent,
   ],
   imports: [
     BrowserModule,
