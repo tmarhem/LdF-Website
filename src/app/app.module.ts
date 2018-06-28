@@ -24,6 +24,7 @@ import { FacebookModule } from 'ng2-facebook-sdk';
 /**
 INFO Youtube bug probably inherent to the module, http instead of https, can't change it in params
 
+TODO Formulaire de contact
 TODO Rename and divide presentation module into 3
 **/
 
