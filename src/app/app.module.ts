@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { NavPresentationComponent } from './shared/nav-presentation/nav-presentation.component';
+import { NavActivitiesComponent } from './shared/nav-activities/nav-activities.component';
 
 
 //Probably useless
@@ -19,6 +20,10 @@ import CustomStore from 'devextreme/data/custom_store';
 
 //Facebook
 import { FacebookModule } from 'ng2-facebook-sdk';
+import { PresentationFullComponent } from './presentation-full/presentation-full.component';
+import { PresentationMembresComponent } from './presentation-membres/presentation-membres.component';
+import { ActivitiesSchoolComponent } from './activities-school/activities-school.component';
+import { ActivitiesExceptionnalComponent } from './activities-exceptionnal/activities-exceptionnal.component';
 
 
 /**
@@ -32,7 +37,11 @@ TODO Rename and divide presentation module into 3
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'presentation', component: PresentationComponent },
-  { path: 'activities', component: ActivitiesComponent },
+  { path: 'presentationFull', component: PresentationFullComponent },
+  { path: 'presentationMembres', component: PresentationMembresComponent },
+  { path: 'activities', component: ActivitiesComponent },  
+  { path: 'activitiesSchool', component: ActivitiesSchoolComponent },
+  { path: 'activitiesExceptionnal', component: ActivitiesExceptionnalComponent },
   { path: 'joinUs', component: JoinUsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '',
@@ -50,6 +59,11 @@ const appRoutes: Routes = [
     HomeComponent,
     PresentationComponent,
     NavPresentationComponent,
+    NavActivitiesComponent,
+    PresentationFullComponent,
+    PresentationMembresComponent,
+    ActivitiesSchoolComponent,
+    ActivitiesExceptionnalComponent,
   ],
   imports: [
     BrowserModule,
