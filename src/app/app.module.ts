@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { NavPresentationComponent } from './shared/nav-presentation/nav-presentation.component';
 import { NavActivitiesComponent } from './shared/nav-activities/nav-activities.component';
+import { TemplateMemberStoryComponent } from './shared/template-member-story/template-member-story.component';
 
 
 //Probably useless
@@ -64,6 +65,7 @@ const appRoutes: Routes = [
     PresentationMembresComponent,
     ActivitiesSchoolComponent,
     ActivitiesExceptionnalComponent,
+    TemplateMemberStoryComponent,
   ],
   imports: [
     BrowserModule,

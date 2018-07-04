@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-template-member-story',
@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateMemberStoryComponent implements OnInit {
 
-  constructor() { }
+@Input() firstName : string;
+@Input() lastName : string;
+@Input() nickname : string;
+@Input() title : string;
+@Input() pictureName : string;
+@Input() history : string;
+pictureUrl : string;
+
+
+  constructor() {
+  	/**
+  	if(pictureName!=null){
+  		  pictureUrl= "../../assets/images/"+pictureName;
+  	}
+  	**/
+   }
 
   ngOnInit() {
   }
-
 }
