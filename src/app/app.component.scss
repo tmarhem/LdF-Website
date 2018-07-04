@@ -3,26 +3,36 @@
 	position : sticky;
 }
 #socialMedias{
-		padding-top: -15px;
-
-		width: 95%;
-display: block;
-margin: auto;
+	padding-top: -15px;
+	border-radius: 55px;
+	width: 95%;
+	display: block;
+	margin: auto;
 	background-color: grey;
 	text-align: right;
+	position:relative;
+	z-index: 1000;
 }
 #socialMedias ul li{
 	display: inline-block;
 	margin-right: 25px;
+	color:black;
+	text-decoration: none;
 }
 
 
 footer{
-	background-color: black;
 	width: 100%;
+	color:grey;
+}
+
+footer .row{
+	background-color: rgb(25,25,25);
+	margin-top: -20px;
+	padding-top: 20px;
 }
 
 #authorMark{
 	text-align: center;
-	color: grey;
+	background-color: rgb(25,25,25);
 }
