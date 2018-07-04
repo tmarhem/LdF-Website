@@ -13,11 +13,19 @@
 	position:relative;
 	z-index: 1000;
 }
+#socialMedias ul {
+	margin-right: 15px;
+}
+
 #socialMedias ul li{
 	display: inline-block;
-	margin-right: 25px;
+	margin-right: 5px;
 	color:black;
-	text-decoration: none;
+}
+
+#socialMedias ul li img{
+	height: 25px;
+	width: 25px;
 }
 
 
@@ -28,7 +36,7 @@ footer{
 
 footer .row{
 	background-color: rgb(25,25,25);
-	margin-top: -20px;
+	margin-top: -23px;
 	padding-top: 20px;
 }
 
