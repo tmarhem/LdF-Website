@@ -1,7 +1,8 @@
 
 
-  <div class="row">
+<div class="row">
 
+  
     <div class="col-sm-12" style="background-color:lavender;">
 
       <p>Texte d'accueil</p>
@@ -12,30 +13,30 @@
 
     <div class="col-sm-8" style="background-color:cyan;">
       <div id="youtubePlayer">
-      <youtube-player
-      [videoId]="id"
-      [height]="282"
-      [width]="500"
-      (ready)="savePlayer($event)"
-      (change)="onStateChange($event)"
-    ></youtube-player>
-  </div>
+        <youtube-player
+        [videoId]="id"
+        [height]="282"
+        [width]="500"
+        (ready)="savePlayer($event)"
+        (change)="onStateChange($event)"
+        ></youtube-player>
+      </div>
 
-  </div>
+    </div>
 
-  <div class="col-sm-4" style="background-color:lightgray;">
+    <div class="col-sm-4" style="background-color:lightgray;">
 
-    <p>Suivez notre page Facebook et nos évènements : <br>
+      <p>Suivez notre page Facebook et nos évènements : <br>
 
 
-    <fb-follow href="https://www.facebook.com/LesLionsDeFlandres/"></fb-follow>
-    <fb-page 
-      href="https://www.facebook.com/LesLionsDeFlandres/"
-      adaptContainerWidth="true"
-      smallHeader="true"
-      tabs="timeline,events"
-    ></fb-page></p>
+        <fb-follow href="https://www.facebook.com/LesLionsDeFlandres/"></fb-follow>
+        <fb-page 
+        href="https://www.facebook.com/LesLionsDeFlandres/"
+        adaptContainerWidth="true"
+        smallHeader="true"
+        tabs="timeline,events"
+        ></fb-page></p>
 
-  </div>      
+      </div>     
 
 
