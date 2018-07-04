@@ -7,23 +7,23 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TemplateMemberStoryComponent implements OnInit {
 
-@Input() firstName : string;
-@Input() lastName : string;
-@Input() nickname : string;
-@Input() title : string;
-@Input() pictureName : string;
-@Input() history : string;
-pictureUrl : string;
-
+  @Input() firstName : string;
+  @Input() lastName : string;
+  @Input() nickname : string;
+  @Input() title : string;
+  @Input() history : string;
+  pictureUrl : string;
 
   constructor() {
-  	/**
-  	if(pictureName!=null){
-  		  pictureUrl= "../../assets/images/"+pictureName;
-  	}
-  	**/
-   }
+   this.pictureUrl="../../../assets/images/";
+ }
 
-  ngOnInit() {
+ ngOnInit() {
+    //Si les noms et prénoms sont renseignés
+    if(typeof this.firstName !== 'undefined' && typeof this.lastName !== 'undefined'){
+      //concaténation et formatage sans espaces-sans accents de prénom + nom
+      this.pictureUrl = "\"../../../assets/images/" + (this.firstName + this.lastName).normalize('NFD').replace(/\s+/g, '').replace(/[\u0300-\u036f]/g, "") + ".jpg";
+      console.log(this.pictureUrl);
+    }
   }
 }
