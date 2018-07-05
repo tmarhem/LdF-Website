@@ -24,19 +24,26 @@
       <!-- The slideshow -->
       <div class="carousel-inner rounded">
         <div class="carousel-item active">
-          <img src="../../assets/images/carousel1.jpg" alt="Nos activités">
+          <a class="nav-link" routerLink="/presentation" routerLinkActive="active">
+            <img src="../../assets/images/carousel2.jpg" alt="Qui sommes-nous ?">
+          </a>
+          <div class="carousel-caption">
+            <h2>Qui sommes-nous ?</h2>
+          </div> 
+        </div>
+
+        <div class="carousel-item">
+          <a class="nav-link" routerLink="/activities" routerLinkActive="active"><img src="../../assets/images/carousel1.jpg" alt="Nos activités">
+          </a>
           <div class="carousel-caption">
             <h2>Nos activités</h2>
           </div> 
         </div>
+        
         <div class="carousel-item">
-          <img src="../../assets/images/carousel2.jpg" alt="Nos membres">
-          <div class="carousel-caption">
-            <h2>Nos membres</h2>
-          </div> 
-        </div>
-        <div class="carousel-item">
-          <img src="../../assets/images/carousel1.jpg" alt="Nous rejoindre">
+          <a class="nav-link" routerLink="/joinUs" routerLinkActive="active">
+            <img src="../../assets/images/carousel3.jpg" alt="Nous rejoindre">
+          </a>
           <div class="carousel-caption">
             <h2>Nous rejoindre !</h2>
           </div> 
