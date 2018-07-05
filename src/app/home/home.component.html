@@ -2,16 +2,58 @@
 
 <div class="row">
 
-  
-    <div class="col-sm-12" style="background-color:lavender;">
 
-      <p>Les Lions de Flandre, compagnie de reconstitution historique des détachements militaires bourguigons du XVe siècle - Association loi 1901</p>
-    </div>
+  <div class="col-sm-12" id="homeText">
+    Les Lions de Flandre, compagnie de reconstitution historique des détachements militaires bourguigons du XVe siècle - Association loi 1901
   </div>
+</div>
 
-  <div class="row">
+<div class="row">
 
-    <div class="col-sm-8" style="background-color:cyan;">
+  <div class="col-sm-8">
+
+    <div id="carouselPlugin" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#carouselPlugin" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselPlugin" data-slide-to="1"></li>
+        <li data-target="#carouselPlugin" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="../../assets/images/carousel1.jpg" alt="Nos activités">
+          <div class="carousel-caption">
+            <h2>Nos activités</h2>
+          </div> 
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/images/carousel2.jpg" alt="Nos membres">
+          <div class="carousel-caption">
+            <h2>Nos membres</h2>
+          </div> 
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/images/carousel1.jpg" alt="Nous rejoindre">
+          <div class="carousel-caption">
+            <h2>Nous rejoindre !</h2>
+          </div> 
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#carouselPlugin" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselPlugin" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
+    </div>
+
+      <!--
       <div id="youtubePlayer">
         <youtube-player
         [videoId]="id"
@@ -21,21 +63,22 @@
         (change)="onStateChange($event)"
         ></youtube-player>
       </div>
+    -->
 
-    </div>
+  </div>
 
-    <div class="col-sm-4" style="background-color:lightgray;" id="facebookPlugin">
+  <div class="col-sm-4" style="background-color:lightgray;" id="facebookPlugin">
 
-      <p>Suivez notre page Facebook et nos évènements : <br>
+    <p>Suivez notre page Facebook et nos évènements : <br>
 
-        <fb-follow href="https://www.facebook.com/LesLionsDeFlandres/"></fb-follow>
-        <fb-page 
-        href="https://www.facebook.com/LesLionsDeFlandres/"
-        adaptContainerWidth="true"
-        smallHeader="true"
-        tabs="timeline,events"
-        ></fb-page></p>
+      <fb-follow href="https://www.facebook.com/LesLionsDeFlandres/"></fb-follow>
+      <fb-page 
+      href="https://www.facebook.com/LesLionsDeFlandres/"
+      adaptContainerWidth="true"
+      smallHeader="true"
+      tabs="timeline,events"
+      ></fb-page></p>
 
-      </div>     
+    </div>     
 
 
