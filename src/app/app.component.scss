@@ -1,5 +1,6 @@
 #body{
 	background-color: rgb(240,240,240);
+	min-width: 400px;
 }
 #mainNav{
 	position : sticky;
@@ -46,3 +47,8 @@ footer .row{
 	text-align: center;
 	background-color: rgb(25,25,25);
 }
+
+ .fakeimg {
+      height: 200px;
+      background: #aaa;
+  }
