@@ -9,6 +9,12 @@ import { TemplateMemberStoryComponent } from './template-member-story/template-m
   imports: [
     CommonModule
   ],
+  exports: [
+    BaseFrameworkComponent,
+    NavPresentationComponent,
+    NavActivitiesComponent,
+    TemplateMemberStoryComponent
+  ],
   declarations: [BaseFrameworkComponent, NavPresentationComponent, NavActivitiesComponent, TemplateMemberStoryComponent]
 })
 export class SharedModule { }

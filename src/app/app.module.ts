@@ -9,9 +9,10 @@ import { JoinUsComponent } from './join-us/join-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PresentationComponent } from './presentation/presentation.component';
-import { NavPresentationComponent } from './shared/nav-presentation/nav-presentation.component';
-import { NavActivitiesComponent } from './shared/nav-activities/nav-activities.component';
-import { TemplateMemberStoryComponent } from './shared/template-member-story/template-member-story.component';
+import { SharedModule } from './shared/shared.module';
+//import { NavPresentationComponent } from './shared/nav-presentation/nav-presentation.component';
+//import { NavActivitiesComponent } from './shared/nav-activities/nav-activities.component';
+//import { TemplateMemberStoryComponent } from './shared/template-member-story/template-member-story.component';
 
 
 //Probably useless
@@ -59,15 +60,16 @@ const appRoutes: Routes = [
     ContactComponent,
     HomeComponent,
     PresentationComponent,
-    NavPresentationComponent,
-    NavActivitiesComponent,
     PresentationFullComponent,
     PresentationMembresComponent,
     ActivitiesSchoolComponent,
     ActivitiesExceptionnalComponent,
-    TemplateMemberStoryComponent,
+    //TemplateMemberStoryComponent,
+    //NavPresentationComponent,
+    //NavActivitiesComponent
   ],
   imports: [
+    SharedModule,
     BrowserModule,
     YoutubePlayerModule,
     HttpClientModule,
