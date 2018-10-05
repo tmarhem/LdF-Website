@@ -10,8 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { SharedModule } from './shared/shared.module';
-//import { NavPresentationComponent } from './shared/nav-presentation/nav-presentation.component';
-//import { NavActivitiesComponent } from './shared/nav-activities/nav-activities.component';
+import { NavPresentationComponent } from './shared/nav-presentation/nav-presentation.component';
+import { NavActivitiesComponent } from './shared/nav-activities/nav-activities.component';
 //import { TemplateMemberStoryComponent } from './shared/template-member-story/template-member-story.component';
 
 
@@ -65,8 +65,8 @@ const appRoutes: Routes = [
     ActivitiesSchoolComponent,
     ActivitiesExceptionnalComponent,
     //TemplateMemberStoryComponent,
-    //NavPresentationComponent,
-    //NavActivitiesComponent
+    NavPresentationComponent,
+    NavActivitiesComponent
   ],
   imports: [
     SharedModule,
