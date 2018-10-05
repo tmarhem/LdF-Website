@@ -14,8 +14,6 @@ import { NavPresentationComponent } from './shared/nav-presentation/nav-presenta
 import { NavActivitiesComponent } from './shared/nav-activities/nav-activities.component';
 //import { TemplateMemberStoryComponent } from './shared/template-member-story/template-member-story.component';
 
-
-//Probably useless
 import 'rxjs/Rx';
 
 //Facebook
@@ -85,6 +83,5 @@ const appRoutes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-//GCalendar
-  
+
 }
