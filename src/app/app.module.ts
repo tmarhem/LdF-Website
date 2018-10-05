@@ -17,8 +17,6 @@ import { SharedModule } from './shared/shared.module';
 
 //Probably useless
 import 'rxjs/Rx';
-import DataSource from 'devextreme/data/data_source';
-import CustomStore from 'devextreme/data/custom_store';
 
 //Facebook
 import { FacebookModule } from 'ng2-facebook-sdk';
@@ -47,8 +45,7 @@ const appRoutes: Routes = [
   { path: 'joinUs', component: JoinUsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
+    redirectTo: 'home'
   },
 ];
 
