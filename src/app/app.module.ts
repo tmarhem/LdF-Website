@@ -30,11 +30,16 @@ import { ActivitiesExceptionnalComponent } from './activities-exceptionnal/activ
 INFO Youtube bug probably inherent to the module, http instead of https, can't change it in params
 
 TODO Formulaire de contact
-TODO Rename and divide presentation module into 3
+TODO DEBUG FACEBOOK MODULE
 **/
 
 //Defining routes
 const appRoutes: Routes = [
+  { path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+
+  },
   { path: 'home', component: HomeComponent },
   { path: 'presentation', component: PresentationComponent },
   { path: 'presentationFull', component: PresentationFullComponent },
@@ -44,11 +49,7 @@ const appRoutes: Routes = [
   { path: 'activitiesExceptionnal', component: ActivitiesExceptionnalComponent },
   { path: 'joinUs', component: JoinUsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-
-  },
+  { path: "**", redirectTo:"home"}
 ];
 
 @NgModule({
