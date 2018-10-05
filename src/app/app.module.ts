@@ -45,7 +45,9 @@ const appRoutes: Routes = [
   { path: 'joinUs', component: JoinUsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '',
-    redirectTo: 'home'
+    redirectTo: '/home',
+    pathMatch: 'full'
+
   },
 ];
 
