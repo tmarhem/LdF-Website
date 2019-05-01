@@ -42,11 +42,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/ldf-favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "../../GitKraken Repositories/LdF-Website/node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
             "scripts": []
